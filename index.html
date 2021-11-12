@@ -40,7 +40,6 @@
   <script>
     var vConsole = new VConsole()
     console.log("Hello World!")
-    error()
   </script>
 
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -152,7 +151,7 @@
           getFriendship()
           createUniversalLink()
         } else {
-          // liff.login()
+          liff.login()
         }
       })
       await liff.init({ liffId: "1656626059-OQKE19dp" })
